@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <Title> Intern registration Form</Title>
+    <link rel="stylesheet" href="my intern form.css">
+</head>
+
+<body>
+    <div class="form">
+        <!--form page-->
+        <div class="form-box">
+            <!--toggle authentification button-->
+            <div class="button-box">
+                <div id="btn" class="button-register-active"></div>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+
+                <button type="button" class="toggle-btn" onclick="login()"> Log In</button>
+            </div>
+
+            <form id="register" class="input-group active">
+                <input type="text" class="input-field" placeholder="First name(s)" required>
+                <input type="text" class="input-field" placeholder="Last name(s)" required>
+                <center>Make sure you write your full names</center>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="datetime" class="input-field" placeholder="Date of birth" required>
+                <input type="text" class="input-field" placeholder="Address" required>
+                <input type="password" class="input-field" placeholder="Enter password" required>
+                <center>Enter a password else of your email password</center>
+                <input type="text" class="input-field" placeholder="Intended post" required>
+                <input type="text" class="input-field" placeholder="speciality" required>
+                <input type="checkbox" class="check-box"><span> I agree to the terms and conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+            <form id="login" class="input-group login-hidden">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Enter password" required>
+                <input type="checkbox" class="check-box"><span> Remember Password</span>
+                <button type="submit" class="submit-btn">log in</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var registerForm = document.getElementById("register");
+        var loginForm = document.getElementById("login");
+        var buttonMover = document.getElementById("btn");
+
+        function login() {
+            loginForm.classList.add('active');
+            loginForm.classList.remove('login-hidden');
+
+            registerForm.classList.remove('active');
+            registerForm.classList.add('register-hidden');
+
+            buttonMover.classList.add('button-login-active');
+            buttonMover.classList.remove('button-register-active');
+
+        }
+
+        function register() {
+            loginForm.classList.remove('active');
+            loginForm.classList.add('login-hidden');
+
+            registerForm.classList.add('active');
+            registerForm.classList.remove('register-hidden');
+
+            buttonMover.classList.remove('button-login-active');
+            buttonMover.classList.add('button-register-active');
+        }
+    </script>
+
+</body>
+
+</html>
