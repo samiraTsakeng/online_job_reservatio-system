@@ -28,48 +28,78 @@ h1{
     width: 100%;
     height: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: fixed;
     top: 0;
     left: 0;
     padding: 1rem 2.5rem;
     z-index: 10;
     color: var(--greycolor);
-    background: transparent;
+    background: #CD7F32;
 }
 
 .navbar-logo > a {
     letter-spacing: 0;
     text-decoration: none;
-    color: var(--Blackcolor)
+    color: var(--Blackcolor);
 }
 
 .navbar-menu{
     width: 400px;
     display: flex;
     justify-content: space-between;
+
 }
 
 .navbar-menu > a{
-    color: var(--whitecolor);
+    color: var(--Blackcolor);
     text-decoration:none;
+    margin: 0px 0px 10px 10px;
+    font-weight: bolder;
+    
 }
 
 .navbar-menu > a:hover{
-    background: #0909ff;
-}
-.navbar-menu > a > select{
-    background: transparent;
-   border: none;
-   color:#FFFFFF;
+    background: #FFF;
+    height: fit-content;
 }
 
-.navbar-menu > a > select > option{
-    color:#000000;
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    padding: 2.5px;
+    font-size: 15px;
     border: none;
-}
-
-
+    font-weight: bolder;
+    
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #cd770f;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #ffffff;}
 .menu-toggle{
     display: none;
 }

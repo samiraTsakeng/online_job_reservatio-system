@@ -20,7 +20,7 @@
 }
 .navbar{
     width: 100%;
-    height: 40px;
+    height: 30px;
     display: flex;
     justify-content: space-around;
     position: fixed;
@@ -28,14 +28,14 @@
     left: 0;
     padding: 1rem 2.5rem;
     z-index: 10;
-    color: #fff;
-    background: #cd7f32;
+    color: var(--greycolor);
+    background: #000;
 }
 
 .navbar-logo > a {
     letter-spacing: 0;
     text-decoration: none;
-    color: var(--Blackcolor);
+    color: #FFF;
 }
 
 .navbar-menu{
@@ -46,7 +46,7 @@
 }
 
 .navbar-menu > a{
-    color: var(--Blackcolor);
+    color: #fff;
     text-decoration:none;
     margin: 0px 0px 10px 10px;
     font-weight: bolder;
@@ -54,13 +54,13 @@
 }
 
 .navbar-menu > a:hover{
-    background: #0b0b0b;
+    background: #000;
     height: fit-content;
 }
 
 .dropbtn {
     background-color: transparent;
-    color: rgb(255, 255, 255);
+    color:white;
     padding: 2.5px;
     font-size: 15px;
     border: none;
@@ -93,7 +93,7 @@
   
   .dropdown:hover .dropdown-content {display: block;}
   
-  .dropdown:hover .dropbtn {background-color: #030303;}
+  .dropdown:hover .dropbtn {background-color: #ffffff;}
 .menu-toggle{
     display: none;
 }
@@ -107,42 +107,30 @@
     cursor: pointer;
 }
 .form{
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    background: linear-gradient(to top, #cd7f32,#ffffff);
-    position: relative;
-   /*background-color:#000000;*/
+   height: 130%;
+   width: 100%;
+   background-position: center;
+   background-size: cover;
+   position: absolute;
+   background-color:linear-gradient(to top, #cd7f32,#ffffff);
    /*background-image: url(images/IMG-2847.jpg);*/
    
 }
-/*.form::before{
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: rgb(54, 93, 212);
-    clip-path: inset(47% 0 0 0);
-    z-index: -1;
-}*/
 .form-box{
     width: 380px;
     height: 640px;
     position: relative;
     margin: 9% auto;
-    padding: 6px;
+    padding: 7px;
     overflow: hidden;
      border:2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(20px);
     box-shadow:0 0 30px rgba(0, 0, 0, .5);
-    /*background-color: #cd770f;*/
 
 }
 center{
-    color:#9d1e1e;
+    color:#d5cece;
     font-size: small;
 }
 .button-box{width: 220px;
