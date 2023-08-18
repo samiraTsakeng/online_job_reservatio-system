@@ -189,22 +189,27 @@ center{
 }
 .submit-btn{
      width: 85%;
-    padding: 10px 30px;
+    padding: 10px 40px;
     cursor: pointer;
     display: block;
-    margin: auto;
+    margin: 90px 0px 0px 23px;
     background: linear-gradient(to right, #ff105f,#ffad06);
     border: 0;
     outline: none;
     border-radius: 30px;
 }
-.check-box{
+/*.check-box{
       margin:30px 10px 30px 0;
-}
-span{
+}*/
+span > a{
     color:#777;
     font-size: 12px;
     bottom: 68px;
-    position: absolute; 
+    position: absolute;
+    margin: 0px 0px 0px 0px; 
+    /*padding: 70px 10px 45px 19px;*/
+    bottom: 90px;
+    top: 120px;
+    left:60px;
 }
 
