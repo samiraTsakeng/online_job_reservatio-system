@@ -161,6 +161,19 @@ header{
     padding: 3% 10%;
 }
 
+.featured-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--whitecolor);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.featured-card:hover{
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 .featured-image {
     height: 50px;
     margin-bottom: 0.2rem;
@@ -210,6 +223,35 @@ header{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 122, 255, 0.5) 100%),
     linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
     z-index: 1;
+}
+
+.join-detail{
+    min-width: 280px;
+    width: 50%;
+    z-index: 2;
+    margin-bottom: 1rem;
+}
+
+.join-detail{
+    font-size: 36px;
+    letter-spacing: 2;
+}
+
+.join-button{
+    width: 200px;
+    padding: 1rem;
+    border: none;
+    color: var(--Blackcolor);
+    background-color: var(--primarycolor);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.join-button:hover{
+    background: transparent;
+    border: 2px solid #551606;
+    color: #551606;
 }
 
 
