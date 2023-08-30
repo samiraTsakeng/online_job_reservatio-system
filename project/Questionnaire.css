@@ -4,11 +4,13 @@
     box-sizing: border-box;
     outline: none;
     font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
 }
 
 body{
     width: 100%;
     height: auto;
+    background: bisque;
 }
 
 h1{
@@ -104,18 +106,43 @@ h1{
     cursor: pointer;
 }
 
-
-
-.company-list{
-    margin: 5%;
-    padding: 1rem;
-    background-color: bisque;
+.app{
+   background: #FFF; 
+   width: 90%;
+   max-width: 600px;
+   margin: 100px auto 0;
+   border-radius: 10px;
+   Padding: 30px;
 }
-
-.name{
-    padding: 0px;
+.app h1{
+    font-size:25px;
+    color:#001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
 }
-.name > h1{
-    font-size: medium;
-    font-weight: bolder;
+.quiz{
+    padding: 20px 0;
+}
+.quiz h2{
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+}
+.area{
+    background-color: #fff;
+    width: 550px;
+    height: 250px;
+}
+#next-btn{
+  background: #cd770f;
+  color:#FFF;  
+  font-weight: 500;
+  width: 150px;
+  border:0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
 }

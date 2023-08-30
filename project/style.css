@@ -121,6 +121,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    padding: 115px 20px;
 }
 
 .header-title {
